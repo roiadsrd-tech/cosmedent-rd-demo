@@ -1,14 +1,14 @@
 :root {
   --bg-warm: #FAF8F5;
-  --bg-secondary: #F2F6F8;
-  --bg-dark: #0A1924;
-  --text-dark: #0F172A;
-  --text-muted: #475569;
-  --text-light: #F8FAFC;
-  --accent: #0284C7;
-  --accent-hover: #0369A1;
-  --accent-soft: #E0F2FE;
-  --gold: #B4833E;
+  --bg-secondary: #F1F5F4;
+  --bg-dark: #050608;
+  --text-dark: #111822;
+  --text-muted: #94A3B8;
+  --text-light: #FFFFFF;
+  --accent: #D4AF37;
+  --accent-hover: #E5C158;
+  --accent-soft: #2A2415;
+  --gold: #F4E274;
   --font-display: 'Cormorant Garamond', 'Outfit', serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-ui: 'Outfit', sans-serif;

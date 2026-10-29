@@ -181,16 +181,16 @@ const DATA = {
     "fontDisplay": "Cormorant Garamond",
     "fontSans": "Plus Jakarta Sans",
     "palette": {
-      "bgWarm": "#FAF8F5",
-      "bgSecondary": "#F2F6F8",
-      "bgDark": "#0A1924",
-      "textDark": "#0F172A",
-      "textMuted": "#475569",
-      "textLight": "#F8FAFC",
-      "accent": "#0284C7",
-      "accentHover": "#0369A1",
-      "accentSoft": "#E0F2FE",
-      "goldAccent": "#B4833E"
+      "bgWarm": "#0B0C0E",
+      "bgSecondary": "#14171C",
+      "bgDark": "#050608",
+      "textDark": "#F8FAFC",
+      "textMuted": "#94A3B8",
+      "textLight": "#FFFFFF",
+      "accent": "#D4AF37",
+      "accentHover": "#E5C158",
+      "accentSoft": "#2A2415",
+      "goldAccent": "#F4E274"
     },
     "inspirationRefs": [
       "/inspiration/clinics-health/h1.jpg",
@@ -203,21 +203,21 @@ const DATA = {
   }
 };
 const MEDIA = {
-  "heroMain": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=85&fm=webp",
-  "heroDetail": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=85&fm=webp",
-  "specialist": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=85&fm=webp",
+  "heroMain": "/media/post_1.jpg",
+  "heroDetail": "/media/post_10.jpg",
+  "specialist": "/media/post_11.jpg",
   "services": [
-    "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85&fm=webp",
-    "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=85&fm=webp",
-    "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=85&fm=webp",
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85&fm=webp"
+    "/media/post_12.jpg",
+    "/media/post_2.jpg",
+    "/media/post_3.jpg",
+    "/media/post_4.jpg"
   ],
-  "beforeImg": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=80&fm=webp",
-  "afterImg": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=85&fm=webp",
+  "beforeImg": "/media/post_5.jpg",
+  "afterImg": "/media/post_6.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1100&q=85&fm=webp",
-    "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1100&q=85&fm=webp",
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1100&q=85&fm=webp"
+    "/media/post_7.jpg",
+    "/media/post_8.jpg",
+    "/media/post_9.jpg"
   ]
 };
 const IS_HEALTH = true;
@@ -241,9 +241,12 @@ export default function App() {
       {/* NAVBAR FIJO EDITORIAL */}
       <header className="site-navbar">
         <div className="container nav-inner">
-          <a href="#" className="brand-mark">
-            <span className="brand-name">{DATA.businessName}</span>
-            <span className="brand-sub">{DATA.tagline}</span>
+          <a href="#" className="brand-mark" style={{ display: 'flex', alignItems: 'center', gap: '14px', flexDirection: 'row' }}>
+            <img src="/media/logo_real.jpg" alt="CosmeDent RD" style={{ width: '48px', height: '48px', borderRadius: '50%', objectFit: 'cover', border: '1.5px solid var(--accent)' }} />
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span className="brand-name">{DATA.businessName}</span>
+              <span className="brand-sub">{DATA.tagline}</span>
+            </div>
           </a>
 
           <nav className="nav-links">
