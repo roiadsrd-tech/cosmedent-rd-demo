@@ -705,8 +705,22 @@ a {
 }
 
 @media (max-width: 640px) {
+  .site-navbar {
+    height: 68px;
+  }
+  .brand-name {
+    font-size: 1.32rem;
+  }
+  .brand-sub {
+    font-size: 0.62rem;
+  }
+  .nav-cta-btn {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap;
+  }
   .hero-section {
-    padding: 120px 0 80px;
+    padding: 108px 0 72px;
   }
   .hero-floating-photo {
     display: none;

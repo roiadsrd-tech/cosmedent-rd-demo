@@ -253,8 +253,8 @@ export default function App() {
             <a href="#ubicacion">Ubicación</a>
           </nav>
 
-          <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn-brand" style={{ padding: '12px 24px', fontSize: '0.92rem' }}>
-            {DATA.hero.primaryCta} <ArrowUpRight size={17} />
+          <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn-brand nav-cta-btn" style={{ padding: '12px 24px', fontSize: '0.92rem' }}>
+            Agendar Cita <ArrowUpRight size={17} />
           </a>
         </div>
       </header>
